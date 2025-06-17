@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranjeet Telkhade | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Add Three.js for 3D effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Add GSAP for smooth animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- Add Tilt.js for 3D card effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <header>
+        <div class="logo">
+            <a href="index.html">RT</a>
+        </div>
+        <nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="landing-page modern-landing">
+        <div class="landing-content">
+            <div class="hero-greeting">
+                <h5>Welcome to my Portfolio</h5>
+            </div>
+            
+            <h1 class="glitch" data-text="Ranjeet Telkhade">Ranjeet Telkhade</h1>
+            <p class="typewriter">Full Stack Developer & AI Enthusiast</p>
+            
+            <div class="section-links">
+                <a href="home.html" class="section-link" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.3">
+                    <div class="section-icon"><i class="fas fa-home"></i></div>
+                    <h3>Home</h3>
+                    <p>Welcome page with introduction</p>
+                    <div class="link-hover-effect"></div>
+                </a>
+                
+                <a href="about.html" class="section-link" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.3">
+                    <div class="section-icon"><i class="fas fa-user"></i></div>
+                    <h3>About</h3>
+                    <p>Learn more about me, my education and experience</p>
+                    <div class="link-hover-effect"></div>
+                </a>
+                
+                <a href="skills.html" class="section-link" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.3">
+                    <div class="section-icon"><i class="fas fa-code"></i></div>
+                    <h3>Skills</h3>
+                    <p>Technical skills and proficiencies</p>
+                    <div class="link-hover-effect"></div>
+                </a>
+                
+                <a href="projects.html" class="section-link" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.3">
+                    <div class="section-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h3>Projects</h3>
+                    <p>Showcase of my recent work</p>
+                    <div class="link-hover-effect"></div>
+                </a>
+                
+                <a href="contact.html" class="section-link" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.3">
+                    <div class="section-icon"><i class="fas fa-envelope"></i></div>
+                    <h3>Contact</h3>
+                    <p>Get in touch with me</p>
+                    <div class="link-hover-effect"></div>
+                </a>
+            </div>
+            
+            <div class="floating-shapes">
+                <div class="shape shape1"></div>
+                <div class="shape shape2"></div>
+                <div class="shape shape3"></div>
+                <div class="shape shape4"></div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content" style="text-align: center;">
+            <p style="margin-bottom: 10px;">&copy; 2025 Ranjeet Telkhade. All Rights Reserved.</p>
+            <div class="social-links" style="display: flex; justify-content: center; gap: 20px;">
+                <a href="https://github.com/ranjeet-telkhade" class="social-icon" data-tooltip="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ranjeet-telkhade/" class="social-icon" data-tooltip="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/ranjeet_telkhade" class="social-icon" data-tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ranjeet.telkhade/" class="social-icon" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Particle.js for background effects -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    
+    <script>
+        // Initialize particles.js
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 80,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: '#8a2be2'
+                },
+                shape: {
+                    type: 'circle',
+                    stroke: {
+                        width: 0,
+                        color: '#000000'
+                    },
+                    polygon: {
+                        nb_sides: 5
+                    }
+                },
+                opacity: {
+                    value: 0.5,
+                    random: true,
+                    anim: {
+                        enable: true,
+                        speed: 1,
+                        opacity_min: 0.1,
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: {
+                        enable: true,
+                        speed: 2,
+                        size_min: 0.1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#00ffff',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 1,
+                    direction: 'none',
+                    random: true,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                    attract: {
+                        enable: true,
+                        rotateX: 600,
+                        rotateY: 1200
+                    }
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'grab'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 140,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 8,
+                        speed: 3
+                    },
+                    repulse: {
+                        distance: 200,
+                        duration: 0.4
+                    },
+                    push: {
+                        particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
+                    }
+                }
+            },
+            retina_detect: true
+        });
+        
+        // Initialize Tilt.js
+        VanillaTilt.init(document.querySelectorAll('.section-link'), {
+            max: 10,
+            speed: 400,
+            glare: true,
+            'max-glare': 0.3,
+        });
+        
+        // GSAP Animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate greeting text
+            gsap.from('.greeting-text', {
+                y: -50,
+                opacity: 0,
+                duration: 1,
+                ease: 'power3.out'
+            });
+            
+            // Animate main title
+            gsap.from('.glitch', {
+                y: -30,
+                opacity: 0,
+                duration: 1,
+                delay: 0.3,
+                ease: 'power3.out'
+            });
+            
+            // Animate typewriter text
+            gsap.from('.typewriter', {
+                y: -20,
+                opacity: 0,
+                duration: 1,
+                delay: 0.6,
+                ease: 'power3.out'
+            });
+            
+            // Animate section links
+            gsap.from('.section-link', {
+                y: 50,
+                opacity: 0,
+                duration: 0.8,
+                stagger: 0.2,
+                delay: 1,
+                ease: 'power3.out'
+            });
+            
+            // Animate floating shapes
+            gsap.from('.shape', {
+                scale: 0,
+                opacity: 0,
+                duration: 1,
+                stagger: 0.3,
+                delay: 1.5,
+                ease: 'elastic.out(1, 0.3)'
+            });
+            
+            // Animate scroll indicator
+            gsap.from('.scroll-indicator', {
+                y: 30,
+                opacity: 0,
+                duration: 1,
+                delay: 2,
+                ease: 'power3.out'
+            });
+        });
+    </script>
+</body>
+</html>

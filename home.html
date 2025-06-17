@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranjeet Telkhade | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Add Three.js for 3D effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Add GSAP for smooth animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <header>
+        <div class="logo">
+            <a href="index.html">RT</a>
+        </div>
+        <nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero modern-hero">
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="hero-greeting">
+                    <span class="greeting-text">Hello, I'm</span>
+                </div>
+                <h1 class="glitch" data-text="Ranjeet Telkhade">Ranjeet Telkhade</h1>
+                <div class="hero-title">
+                    <div class="hero-title-wrapper">
+                        <div class="hero-title-item">Web Developer</div>
+                        <div class="hero-title-item">Java Developer</div>
+                        <div class="hero-title-item">AI Enthusiast</div>
+                        <div class="hero-title-item">Problem Solver</div>
+                    </div>
+                </div>
+                <p class="hero-description">Building smart, responsive, and AI-driven web experiences using React.js, HTML, CSS, JavaScript, and C/C++/Java/Python.</p>
+                <div class="cta-container">
+                    <i class="fas fa-arrow-right"></i>
+                    <a href="projects.html" >
+                            <h3>View Project</h3>
+                            <p>Check out my lasted work</p>
+                            <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="contact.html">
+                            <h3>Contact Me</h3>
+                            <p>Let's discuss your project</p>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="code-editor">
+                    <div class="code-editor-header">
+                        <div class="code-editor-buttons">
+                            <span class="editor-button red"></span>
+                            <span class="editor-button yellow"></span>
+                            <span class="editor-button green"></span>
+                        </div>
+                        <div class="code-editor-title">welcome.js</div>
+                    </div>
+                    <div class="code-editor-body">
+                        <pre><code>
+<span class="code-comment">// Welcome to my portfolio</span>
+<span class="code-keyword">const</span> <span class="code-function">developer</span> = {
+  <span class="code-property">name</span>: <span class="code-string">"Ranjeet Telkhade"</span>,
+  <span class="code-property">title</span>: <span class="code-string">"Full Stack Developer"</span>,
+  <span class="code-property">skills</span>: [<span class="code-string">"JavaScript"</span>, <span class="code-string">"React"</span>, <span class="code-string">"Node.js"</span>, <span class="code-string">"Python"</span>],
+  <span class="code-property">passion</span>: <span class="code-string">"Building AI-driven solutions"</span>,
+};
+
+<span class="code-function">Hello, World!</span>
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content" style="text-align: center;">
+            <p style="margin-bottom: 10px;">&copy; 2025 Ranjeet Telkhade. All Rights Reserved.</p>
+            <div class="social-links" style="display: flex; justify-content: center; gap: 20px;">
+                <a href="https://github.com/ranjeet-telkhade" class="social-icon" data-tooltip="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ranjeet-telkhade/" class="social-icon" data-tooltip="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/ranjeet_telkhade" class="social-icon" data-tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ranjeet.telkhade/" class="social-icon" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Particle.js for background effects -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
