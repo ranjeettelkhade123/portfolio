@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranjeet Telkhade | About</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="modern-about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <!-- Particles.js for background effects -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">RT</a>
+        </div>
+        <nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <!-- Particles background for visual effect -->
+        <div id="about-particles"></div>
+        
+        <!-- Modern section header -->
+        <div class="modern-section-header">
+            <h2>About <span class="highlight">Me</span></h2>
+            <p class="subtitle">Get to know more about my journey, education, and experience</p>
+        </div>
+        
+        <div class="modern-about-content">
+            <!-- Modern profile image with effects -->
+            <div class="modern-profile-image">
+                <div class="modern-image-container">
+                    <img src="https://i.postimg.cc/ryYHXR8x/Formal-Photo.png" alt="Profile Photo">
+                </div>
+                <div class="modern-status-badge">Currently pursuing B.E. in Computer Science</div>
+            </div>
+            
+            <!-- Modern bio with timeline -->
+            <div class="modern-bio">
+                <p>I’m a passionate Computer Science & Engineering student with a strong foundation in front-end web development and a growing interest in AI and machine learning. I specialize in building responsive web applications using React.js, HTML, CSS, and JavaScript, and have hands-on experience with programming languages like C, C++, Java, and Python. My projects ranging from a real estate price predictor to a sign language translator reflect my drive to solve real-world problems through technology. I'm continuously learning and improving through self-initiated projects and online certifications.</p>
+                
+                <!-- Modern timeline with tabs -->
+                <div class="modern-timeline">
+                    <div class="timeline-header">
+                        <div class="timeline-tab active" data-target="education">Education</div>
+                        <div class="timeline-tab" data-target="experience">Experience</div>
+                    </div>
+                    
+                    <div class="timeline-content">
+                        <!-- Education timeline -->
+                        <div class="timeline-section active" data-id="education">
+                            <div class="modern-timeline-item">
+                                <div class="timeline-date">2022 - 2026</div>
+                                <div class="timeline-title">B.E. in Computer Science & Engineering</div>
+                                <div class="timeline-subtitle">Prof. Ram Meghe College of Engineering & Management</div>
+                                <div class="timeline-description">Pursuing a Bachelor's degree with focus on software development, algorithms, and artificial intelligence.</div>
+                            </div>
+                            
+                            <div class="modern-timeline-item">
+                                <div class="timeline-date">2020 - 2022</div>
+                                <div class="timeline-title">12th Standard</div>
+                                <div class="timeline-subtitle">New High School Main, Amravati</div>
+                                <div class="timeline-description">Completed higher secondary education with focus on science and mathematics.</div>
+                            </div>
+                            
+                            <div class="modern-timeline-item">
+                                <div class="timeline-date">2019 - 2020</div>
+                                <div class="timeline-title">10th Standard</div>
+                                <div class="timeline-subtitle">Shree Ramkrishna Krida Kanishtha Mahavidyalaya</div>
+                                <div class="timeline-description">Completed secondary education with distinction.</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Experience timeline -->
+                        <div class="timeline-section" data-id="experience">
+                            <div class="modern-timeline-item">
+                                <div class="timeline-date">2023</div>
+                                <div class="timeline-title">Event Organizer</div>
+                                <div class="timeline-subtitle">CodeQuest Competition</div>
+                                <div class="timeline-description">Demonstrated leadership and management skills in organizing a successful coding competition for peers. Managed event logistics, participant registration, and problem setting.</div>
+                            </div>
+                            
+                            <div class="modern-timeline-item">
+                                <div class="timeline-date">2022</div>
+                                <div class="timeline-title">Event Organizer</div>
+                                <div class="timeline-subtitle">Code Hunting</div>
+                                <div class="timeline-description">Demonstrated leadership and management skills in organizing a successful code hunting competition for peers. Created engaging challenges and coordinated team activities.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content" style="text-align: center;">
+            <p style="margin-bottom: 10px;">&copy; 2025 Ranjeet Telkhade. All Rights Reserved.</p>
+            <div class="social-links" style="display: flex; justify-content: center; gap: 20px;">
+                <a href="https://github.com/ranjeet-telkhade" class="social-icon" data-tooltip="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ranjeet-telkhade/" class="social-icon" data-tooltip="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/ranjeet_telkhade" class="social-icon" data-tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ranjeet.telkhade/" class="social-icon" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="modern-about.js"></script>
+</body>
+</html>
